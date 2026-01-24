@@ -6,7 +6,7 @@ import java.util.List;
 public class SpiralMatrix {
     static List spiralMatrix(int[][] matrix){
         // Result list to store the spiral order
-        List result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
         // Initialize boundaries
         int top = 0;                        // Starting row
         int bottom = matrix.length - 1;     // Ending row

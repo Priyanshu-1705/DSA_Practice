@@ -13,7 +13,7 @@ public class RotateString {
         //Optimal approach
 //        Agar hum dono string ko add krdenge toh humara goal uss new string me present hoga
         if (s.length() != goal.length()) return false;
-        String doublestring = s+goal;
+        String doublestring = s+s;
         return doublestring.contains(goal);
     }
 

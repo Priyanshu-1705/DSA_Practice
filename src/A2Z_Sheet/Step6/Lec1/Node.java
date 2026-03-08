@@ -1,0 +1,16 @@
+package A2Z_Sheet.Step6.Lec1;
+
+public class Node {
+    int data;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        next = null;
+    }
+
+    public Node(int data, Node next) {
+        this.data = data;
+        this.next = next;
+    }
+}

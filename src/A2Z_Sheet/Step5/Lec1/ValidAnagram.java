@@ -19,14 +19,10 @@ public class ValidAnagram {
             arr[s.charAt(i)]++;
         }
         for (int i = 0; i < t.length(); i++) {
-            if (arr[s.charAt(i)] != 0){
-                arr[s.charAt(i)]--;
-            }else {
-                arr[s.charAt(i)]++;
+            if (arr[t.charAt(i)] == 0) {
+                return false;
             }
-        }
-        for (int i: arr){
-            if (i!=0) return false;
+            arr[t.charAt(i)]--;
         }
         return true;
     }

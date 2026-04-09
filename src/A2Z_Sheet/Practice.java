@@ -3,25 +3,16 @@ package A2Z_Sheet;
 import java.util.Arrays;
 
 public class Practice {
-     static public int finalValueAfterOperations(String[] operations) {
-        int x = 0;
-        for(int i=0;i<operations.length;i++){
-            if(operations[i].toLowerCase().equals("++x")){
-                ++x;
-            }else if(operations[i].toLowerCase().equals("x++")){
-                x++;
-            }else if(operations[i].toLowerCase().equals("--x")){
-                --x;
-            }else if(operations[i].toLowerCase().equals("x--")){
-                x--;
-            }
-        }
-        return x;
+
+     static public int minimumCost(int[] nums) {
+        Arrays.sort(nums);
+        int cost = nums[0] + nums[1] + nums[2];
+        return cost;
     }
 
     public static void main(String[] args) {
-        String[] arr = {"++X","++X","X++"};
-        System.out.println(arr[0]);
-        System.out.println(finalValueAfterOperations(arr));
+        int[] arr = {10,3,1,1};
+        System.out.println(minimumCost(arr));
+
     }
 }
